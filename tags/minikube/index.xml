@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minikube on Documentation Zuhair</title>
+    <link>https://zuhairyahya.site/tags/minikube/</link>
+    <description>Recent content in Minikube on Documentation Zuhair</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/tags/minikube/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Minikube</title>
+      <link>https://zuhairyahya.site/post/install-minikube/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/install-minikube/</guid>
+      <description>Pada artikel pertama ini, akan dijelaskan mengenai cara menginstall minikube di Linux</description>
+    </item>
+    
+  </channel>
+</rss>

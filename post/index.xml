@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Documentation Zuhair</title>
+    <link>https://zuhairyahya.site/post/</link>
+    <description>Recent content in Posts on Documentation Zuhair</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 14 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Moodle</title>
+      <link>https://zuhairyahya.site/post/install-moodle/</link>
+      <pubDate>Wed, 14 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/install-moodle/</guid>
+      <description>Pada artikel keenam ini, saya akan menjelaskan cara menginstall moodle pada ubuntu 18.</description>
+    </item>
+    
+    <item>
+      <title>Install Openstack With Devstack</title>
+      <link>https://zuhairyahya.site/post/install-openstack-with-devstack/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/install-openstack-with-devstack/</guid>
+      <description>Pada artikel keenam ini, saya akan mencoba untuk menjelaskan mengenai cara menginstall Openstack pada ubuntu 18.</description>
+    </item>
+    
+    <item>
+      <title>Install Grafana</title>
+      <link>https://zuhairyahya.site/post/install-grafana/</link>
+      <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/install-grafana/</guid>
+      <description>Pada artikel ketiga ini akan dibahas mengenai cara menginstall grafana menggunakan centos 7 untuk kebutuhan monitoring</description>
+    </item>
+    
+    <item>
+      <title>Install InfluxDB</title>
+      <link>https://zuhairyahya.site/post/install-influxdb/</link>
+      <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/install-influxdb/</guid>
+      <description>Pada artikel keempat ini akan menjelaskan mengenai cara menginstall influxdb</description>
+    </item>
+    
+    <item>
+      <title>Install Telegraf</title>
+      <link>https://zuhairyahya.site/post/install-telegraf/</link>
+      <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/install-telegraf/</guid>
+      <description>Pada artikel kelima ini akan dijelaskan mengenai cara menginstall telegraf</description>
+    </item>
+    
+    <item>
+      <title>Install Kubectl</title>
+      <link>https://zuhairyahya.site/post/install-kubectl/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/install-kubectl/</guid>
+      <description>Pada artikel kedua ini akan dijelaskan bagaimana cara menginstall kubectl</description>
+    </item>
+    
+    <item>
+      <title>Install Minikube</title>
+      <link>https://zuhairyahya.site/post/install-minikube/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/install-minikube/</guid>
+      <description>Pada artikel pertama ini, akan dijelaskan mengenai cara menginstall minikube di Linux</description>
+    </item>
+    
+  </channel>
+</rss>

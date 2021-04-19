@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Monitoring on Documentation Zuhair</title>
+    <link>https://zuhairyahya.site/tags/monitoring/</link>
+    <description>Recent content in Monitoring on Documentation Zuhair</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 23 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/tags/monitoring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Grafana</title>
+      <link>https://zuhairyahya.site/post/install-grafana/</link>
+      <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/install-grafana/</guid>
+      <description>Pada artikel ketiga ini akan dibahas mengenai cara menginstall grafana menggunakan centos 7 untuk kebutuhan monitoring</description>
+    </item>
+    
+    <item>
+      <title>Install InfluxDB</title>
+      <link>https://zuhairyahya.site/post/install-influxdb/</link>
+      <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/install-influxdb/</guid>
+      <description>Pada artikel keempat ini akan menjelaskan mengenai cara menginstall influxdb</description>
+    </item>
+    
+    <item>
+      <title>Install Telegraf</title>
+      <link>https://zuhairyahya.site/post/install-telegraf/</link>
+      <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/install-telegraf/</guid>
+      <description>Pada artikel kelima ini akan dijelaskan mengenai cara menginstall telegraf</description>
+    </item>
+    
+  </channel>
+</rss>
