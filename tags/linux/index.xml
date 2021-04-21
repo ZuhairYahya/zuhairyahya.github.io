@@ -6,7 +6,16 @@
     <description>Recent content in Linux on Documentation Zuhair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 14 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Cpanel WHM</title>
+      <link>https://zuhairyahya.site/post/install-cpanel-whm/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/install-cpanel-whm/</guid>
+      <description>Pada artikel ini, saya akan menjelaskan cara menginstall CPanel WHM pada Centos 7</description>
+    </item>
+    
     <item>
       <title>Install Moodle</title>
       <link>https://zuhairyahya.site/post/install-moodle/</link>
