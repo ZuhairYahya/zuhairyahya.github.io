@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html  dir="ltr" lang="en" data-theme=""><head>
-    <title> Zuhair Yahya | index </title>
+    <title> Zuhair Yahya | Install PhpMyAdmin </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.80.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="Engineer">
+    <meta name="description" content="Cara Install PhpMyAdmin">
     
     
     
@@ -32,10 +32,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="/tags/index/">
+    <link rel="canonical" href="/post/install-phpmyadmin/">
 
     
-    <link rel="alternate" type="application/rss+xml" href="/tags/index/index.xml" title="Documentation Zuhair" />
     
     
     
@@ -56,8 +55,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://zuhairyahya.site/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="index"/>
-<meta name="twitter:description" content="Engineer"/>
+<meta name="twitter:title" content="Install PhpMyAdmin"/>
+<meta name="twitter:description" content="Cara Install PhpMyAdmin"/>
 
 
     
@@ -139,23 +138,94 @@
 
     <div class="autopagerize_page_element">
         <div class="content">
-    <div class="archive  animated fadeInDown ">
-        <ul class="list-with-title">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
             
-                <div class="listing-title">2021</div>
+            <div class="post-title">
+                <h3>Install PhpMyAdmin</h3>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/post/" title="Posts">Posts</a>
-                                <div class="post-time"><span class="date"> Apr 22 
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date"> Thu, Apr 22, 2021 
+                                           </span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">One-minute read</span>
+                    </div>
                 
-            
-        </ul>
+            </div>
+
+            <p>Pada artikel ini, saya akan menjelaskan cara menginstall PhpMyAdmin pada Ubuntu 18.04</p>
+<h2 id="install-phpmyadmin">Install PhpMyAdmin</h2>
+<ol>
+<li>Update repository</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get update
+</code></pre></div><ol start="2">
+<li>Install apache2</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get install apache2
+</code></pre></div><ol start="3">
+<li>Jika berhasil, silahkan cek pada browser</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">http://ip-address
+</code></pre></div><ol start="4">
+<li>Install mysql server</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get install mysql-server
+</code></pre></div><ol start="5">
+<li>Lakukan authentication, masukkan username dan password</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo mysql -u root -p
+
+CREATE USER <span class="s1">&#39;username&#39;</span>@<span class="s1">&#39;localhost&#39;</span> IDENTIFIED BY <span class="s1">&#39;password&#39;</span><span class="p">;</span>
+GRANT ALL PRIVILEGES ON *.* TO <span class="s1">&#39;username&#39;</span>@<span class="s1">&#39;localhost&#39;</span> WITH GRANT OPTION<span class="p">;</span>
+exit<span class="p">;</span>
+</code></pre></div><ol start="6">
+<li>Install library</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get install php php-mysql libapache2-mod-php php-cli php-cgi php-gd mysql-server mysql-client zip -y
+</code></pre></div><ol start="7">
+<li>Masuk directory html</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> /var/www/html
+</code></pre></div><ol start="8">
+<li>Berikan akses untuk info.php</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo touch info.php
+</code></pre></div><ol start="9">
+<li>Masukkan perintah berikut</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo nano info.php
+
+&lt;?php 
+
+phpinfo<span class="o">()</span><span class="p">;</span> 
+
+?&gt;
+</code></pre></div><ol start="11">
+<li>Buka browser untuk mengecek info.php</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">http://IP-Server/info.php
+</code></pre></div><ol start="12">
+<li>Install phpmyadmin</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get install phpmyadmin
+</code></pre></div><ol start="13">
+<li>Cek browser untuk membuka PhpMyAdmin</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">http://IP-server/phpmyadmin
+</code></pre></div><p>Semoga bermanfaat untuk anda.</p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/linux/">Linux</a></span>
+                <span class="separator"><a class="tag" href="/tags/network/">Network</a><a class="tag" href="/tags/linux/">Linux</a></span>
+            </div>
+        </div>
+
+        
     </div>
+
 
         </div>
     </div>
