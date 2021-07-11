@@ -3,27 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://zuhairyahya.site/</loc>
-    <lastmod>2021-06-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zuhairyahya.site/post/generasi-gigih/</loc>
-    <lastmod>2021-06-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://zuhairyahya.site/tags/gojek/</loc>
-    <lastmod>2021-06-21T00:00:00+00:00</lastmod>
+    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://zuhairyahya.site/post/</loc>
-    <lastmod>2021-06-21T00:00:00+00:00</lastmod>
+    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://zuhairyahya.site/tags/</loc>
+    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zuhairyahya.site/post/week_1_reflection/</loc>
+    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zuhairyahya.site/post/generasi-gigih/</loc>
     <lastmod>2021-06-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -130,6 +130,11 @@
   <url>
     <loc>https://zuhairyahya.site/tags/kubernetes/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zuhairyahya.site/</loc>
+    <lastmod>2021-02-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>

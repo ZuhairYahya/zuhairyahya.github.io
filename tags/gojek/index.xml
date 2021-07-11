@@ -6,7 +6,20 @@
     <description>Recent content in Gojek on Documentation Zuhair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 21 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/tags/gojek/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jul 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zuhairyahya.site/tags/gojek/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Weekly Reflection 1</title>
+      <link>https://zuhairyahya.site/post/week_1_reflection/</link>
+      <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/week_1_reflection/</guid>
+      <description>Hallo nama saya Zuhair Yahya, saat ini saya sedang mengikuti program Generasi GIGIH dari Yayasan Anak Bangsa Bisa (YABB) untuk learning path Backend Engineer.</description>
+    </item>
+    
     <item>
       <title>Documentation Generasi GIGIH</title>
       <link>https://zuhairyahya.site/post/generasi-gigih/</link>
