@@ -6,10 +6,19 @@
     <description>Recent content in Gojek on Documentation Zuhair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Jul 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zuhairyahya.site/tags/gojek/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Weekly Reflection 2</title>
+      <link>https://zuhairyahya.site/post/weekly_2_reflection/</link>
+      <pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/weekly_2_reflection/</guid>
+      <description>Halo nama saya Zuhair Yahya, saya dari learning path Backend Engineer.</description>
+    </item>
     
     <item>
       <title>Weekly Reflection 1</title>
