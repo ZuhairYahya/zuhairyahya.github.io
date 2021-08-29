@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" data-theme=""><head>
+    <title> Zuhair Yahya | Deploy Kubernetes Cluster Using Containerd </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.80.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Cara Deploy Kubernetes Cluster Menggunakan Containerd">
+    
+    
+    
+    <link rel="stylesheet"
+        href="/css/style.min.640eb5c861e282bc5d5d74eaa5610a4acc606567d515747915fd9a7509d5bdce.css"
+        integrity="sha256-ZA61yGHigrxdXXTqpWEKSsxgZWfVFXR5Ff2adQnVvc4="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    
+    <link rel="stylesheet"
+        href="/css/markupHighlight.min.cc84ed683057cc175ddfa738ea6ba2d5c882b95cb64f50bf9be918cb3791887b.css"
+        integrity="sha256-zITtaDBXzBdd36c46mui1ciCuVy2T1C/m&#43;kYyzeRiHs="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="/post/deploy-kubernetes-using-containerd/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="/js/anatole-header.min.d8599ee07b7d3f11bafbac30657ccc591e8d7fd36a9f580cd4c09e24e0e4a971.js"
+            integrity="sha256-2Fme4Ht9PxG6&#43;6wwZXzMWR6Nf9Nqn1gM1MCeJODkqXE="
+            crossorigin="anonymous"></script>
+
+
+    
+        
+        
+        <script type="text/javascript"
+                src="/js/anatole-theme-switcher.min.2c507695a28320822cee065375387eac9bc9f3dfd49d4dcf84bbaca2b8efb30c.js"
+                integrity="sha256-LFB2laKDIIIs7gZTdTh&#43;rJvJ89/UnU3PhLusorjvsww="
+                crossorigin="anonymous"></script>
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://zuhairyahya.site/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="Deploy Kubernetes Cluster Using Containerd"/>
+<meta name="twitter:description" content="Cara Deploy Kubernetes Cluster Menggunakan Containerd"/>
+
+
+    
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="/images/profile-picture.jpg" alt="profile picture">
+            <h3 title=""><a href="/">Zuhair Yahya</a></h3>
+            <div class="description">
+                <p>Engineer</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://linkedin.com/in/zuhair-yahya-549b80156/" rel="me" aria-label="Linkedin">
+                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/ZuhairYahya" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:mail@zuhairyahya57@gmail.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Zuhair Yahya  2021 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+        
+        
+            <li class="theme-switch-item">
+                <a class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            
+            <div class="post-title">
+                <h3>Deploy Kubernetes Cluster Using Containerd</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date"> Sun, Aug 29, 2021 
+                                           </span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">2-minute read</span>
+                    </div>
+                
+            </div>
+
+            <p>Pada artikel saya akan membahas bagaimana cara untuk mendeploy kubernetes cluster dengan menggunakan container runtime containerd</p>
+<h2 id="eksekusi-di-master--worker">Eksekusi di Master &amp; Worker</h2>
+<ol>
+<li>Edit nama di /etc/hosts</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo vi /etc/hosts
+
+*IP_Master* *Hostname_Master*
+*IP_Worker* *Hostname_Worker*
+</code></pre></div><ol start="2">
+<li>Verifikasi koneksi</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">ping -c <span class="m">3</span> *Hostname_Master*
+ping -c <span class="m">3</span> *Hostname_Worker*
+</code></pre></div><ol start="3">
+<li>Update dan upgrade paket</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt update<span class="p">;</span> sudo apt upgrade -y<span class="p">;</span> sudo apt autoremove -y
+</code></pre></div><ol start="4">
+<li>Install persistent loading</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo tee /etc/modules-load.d/containerd.conf <span class="s">&lt;&lt;EOF
+</span><span class="s">overlay
+</span><span class="s">br_netfilter
+</span><span class="s">EOF</span>
+</code></pre></div><ol start="5">
+<li>Load runtime</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo modprobe overlay
+sudo modprobe br_netfilter
+</code></pre></div><ol start="6">
+<li>Encsecure system</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo tee /etc/sysctl.d/kubernetes.conf<span class="s">&lt;&lt;EOF
+</span><span class="s">net.bridge.bridge-nf-call-ip6tables = 1
+</span><span class="s">net.bridge.bridge-nf-call-iptables = 1
+</span><span class="s">net.ipv4.ip_forward = 1
+</span><span class="s">EOF</span>
+</code></pre></div><ol start="7">
+<li>Reload config</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo sysctl --system
+</code></pre></div><ol start="8">
+<li>Install paket</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt install -y curl gnupg2 software-properties-common apt-transport-https ca-certificates
+</code></pre></div><ol start="9">
+<li>Tambahkan repository docker</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">curl -fsSL https://download.docker.com/linux/ubuntu/gpg <span class="p">|</span> sudo apt-key add -
+sudo add-apt-repository <span class="s2">&#34;deb [arch=amd64] https://download.docker.com/linux/ubuntu </span><span class="k">$(</span>lsb_release -cs<span class="k">)</span><span class="s2"> stable&#34;</span>
+</code></pre></div><ol start="10">
+<li>Install containerd</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt update
+sudo apt install -y containerd.io
+</code></pre></div><ol start="11">
+<li>Konfigurasi containerd dan start service</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo mkdir -p /etc/containerd
+sudo su -
+containerd config default  /etc/containerd/config.toml
+</code></pre></div><ol start="12">
+<li>Restart containerd</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo systemctl restart containerd
+sudo systemctl <span class="nb">enable</span> containerd
+</code></pre></div><ol start="13">
+<li>Install kubectl dan kubeadm</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt install -y apt-transport-https<span class="p">;</span> curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg <span class="p">|</span> sudo apt-key add -
+
+sudo vi kubernetes.list
+deb http://apt.kubernetes.io/ kubernetes-xenial main
+
+sudo mv kubernetes.list /etc/apt/sources.list.d/kubernetes.list
+sudo apt update<span class="p">;</span> sudo apt install -y <span class="nv">kubectl</span><span class="o">=</span>1.19.0-00 <span class="nv">kubelet</span><span class="o">=</span>1.19.0-00 <span class="nv">kubeadm</span><span class="o">=</span>1.19.0-00
+sudo apt-mark hold kubelet kubeadm kubectl
+
+sudo mkdir -p  /etc/systemd/system/kubelet.service.d/
+cat <span class="s">&lt;&lt; EOF | sudo tee  /etc/systemd/system/kubelet.service.d/0-containerd.conf
+</span><span class="s">[Service]                                                 
+</span><span class="s">Environment=&#34;KUBELET_EXTRA_ARGS=--container-runtime=remote --runtime-request-timeout=15m --container-runtime-endpoint=/run/containerd/containerd.sock&#34;
+</span><span class="s">EOF</span>
+
+sudo systemctl restart containerd
+sudo systemctl status containerd
+</code></pre></div><h2 id="eksekusi-di-node-master">Eksekusi di Node Master</h2>
+<ol start="14">
+<li>Inisialisasi Master</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">swapon -s
+sudo swapoff -a
+sudo kubeadm init --cri-socket /run/containerd/containerd.sock --pod-network-cidr<span class="o">=</span>10.244.0.0/16
+</code></pre></div><ol start="15">
+<li>Salin konfigurasi admin kubernetes</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">mkdir -p <span class="nv">$HOME</span>/.kube
+sudo cp -i /etc/kubernetes/admin.conf <span class="nv">$HOME</span>/.kube/config
+sudo chown <span class="k">$(</span>id -u<span class="k">)</span>:<span class="k">$(</span>id -g<span class="k">)</span> <span class="nv">$HOME</span>/.kube/config
+</code></pre></div><ol start="16">
+<li>Install POD network flanel</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">wget https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+
+kubectl apply -f kube-flannel.yml
+kubectl get pods --all-namespaces
+</code></pre></div><ol start="17">
+<li>verifikasi config dan cluster</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">kubectl config view
+kubectl cluster-info
+</code></pre></div><ol start="18">
+<li>Tampilkan token dan token-ca-cert-hash</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo kubeadm token list
+sudo openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt <span class="p">|</span> openssl rsa -pubin -outform der 2&gt;/dev/null <span class="p">|</span> openssl dgst -sha256 -hex <span class="p">|</span> sed <span class="s1">&#39;s/^.* //&#39;</span>
+</code></pre></div><h2 id="eksekusi-di-node-worker">Eksekusi di Node Worker</h2>
+<p>19.Join node worker ke master</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">swapon -s
+sudo swapoff -a
+sudo kubeadm join --token <span class="o">[</span>TOKEN<span class="o">]</span> <span class="o">[</span>NODE-MASTER<span class="o">]</span>:6443 --discovery-token-ca-cert-hash sha256:<span class="o">[</span>TOKEN-CA-CERT-HASH<span class="o">]</span> --cri-socket /run/containerd/containerd.sock
+</code></pre></div><h2 id="eksekusi-di-master">Eksekusi di Master</h2>
+<ol start="20">
+<li>Verifikasi kode</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">kubectl get nodes
+</code></pre></div><p>Mungkin itu saja yang bisa saya sampaikan. Terimakasih</p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/devops/">DevOps</a></span>
+                <span class="separator"><a class="tag" href="/tags/kubernetes/">Kubernetes</a></span>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script></body>
+
+</html>

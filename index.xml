@@ -26,6 +26,15 @@
     </item>
     
     <item>
+      <title>Deploy Kubernetes Cluster Using Containerd</title>
+      <link>https://zuhairyahya.site/post/deploy-kubernetes-using-containerd/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/deploy-kubernetes-using-containerd/</guid>
+      <description>Pada artikel saya akan membahas bagaimana cara untuk mendeploy kubernetes cluster dengan menggunakan container runtime containerd</description>
+    </item>
+    
+    <item>
       <title>Deploy Metrics Server in Kubernetes Cluster</title>
       <link>https://zuhairyahya.site/post/deploy-metrics-server/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
