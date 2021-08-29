@@ -6,10 +6,15 @@
     <description>Recent content in Kubernetes on Documentation Zuhair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://zuhairyahya.site/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deploy Kubernetes Cluster</title>
+      <link>https://zuhairyahya.site/post/deploy-kubernetes-cluster/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/deploy-kubernetes-cluster/</guid>
+      <description>Pada artikel ini saya akan membahas cara untuk mendeploy kubernetes clutser dengan menggunakan kubeadm untuk dapat membuat sebuah cluster dan saya menggunakan sistem operasi ubuntu 18.</description>
+    </item>
     
     <item>
       <title>Install Kubectl</title>

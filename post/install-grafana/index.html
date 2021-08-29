@@ -3,7 +3,7 @@
     <title> Zuhair Yahya | Install Grafana </title>
 
     
-    <meta charset="utf-8"><meta name="generator" content="Hugo 0.68.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.80.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="Cara Install Grafana">
     
     
@@ -177,11 +177,11 @@
 </code></pre></div><div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="o">[</span>grafana<span class="o">]</span>
 <span class="nv">name</span><span class="o">=</span>grafana
 <span class="nv">baseurl</span><span class="o">=</span>https://packages.grafana.com/oss/rpm
-<span class="nv">repo_gpgcheck</span><span class="o">=</span>1
-<span class="nv">enabled</span><span class="o">=</span>1
-<span class="nv">gpgcheck</span><span class="o">=</span>1
+<span class="nv">repo_gpgcheck</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">enabled</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">gpgcheck</span><span class="o">=</span><span class="m">1</span>
 <span class="nv">gpgkey</span><span class="o">=</span>https://packages.grafana.com/gpg.key
-<span class="nv">sslverify</span><span class="o">=</span>1
+<span class="nv">sslverify</span><span class="o">=</span><span class="m">1</span>
 <span class="nv">sslcacert</span><span class="o">=</span>/etc/pki/tls/certs/ca-bundle.crt
 </code></pre></div><ol start="3">
 <li>Install Grafana</li>

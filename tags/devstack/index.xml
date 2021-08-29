@@ -6,11 +6,7 @@
     <description>Recent content in Devstack on Documentation Zuhair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://zuhairyahya.site/tags/devstack/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/tags/devstack/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install Openstack With Devstack</title>
       <link>https://zuhairyahya.site/post/install-openstack-with-devstack/</link>
