@@ -157,7 +157,7 @@
             <p>Pada artikel ini akan membahas mengenai cara untuk mendeploy nginx pada kubernetes cluster yang sudah berjalan beserta servicenya</p>
 <h2 id="buat-file-deployment">Buat file deployment</h2>
 <ol>
-<li>Buatlah file deployment menggunakan bahasa Yaml</li>
+<li>Buatlah file deployment nginx-deployment.yaml menggunakan bahasa Yaml</li>
 </ol>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l">apps/v1</span><span class="w">
 </span><span class="w"></span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">Deployment</span><span class="w">
@@ -204,7 +204,7 @@
 </span></code></pre></div><ol start="2">
 <li>Apply pada kubernetes cluster</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">kubectl apply nginx-deployment.yaml
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">kubectl apply -f nginx-deployment.yaml
 </code></pre></div><p>Mungkin itu saja yang bisa saya jelaskan. Terimakasih</p>
 </div>
         <div class="post-footer">
