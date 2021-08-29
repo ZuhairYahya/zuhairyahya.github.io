@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MySQL on Documentation Zuhair</title>
+    <link>https://zuhairyahya.site/tags/mysql/</link>
+    <description>Recent content in MySQL on Documentation Zuhair</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deploy Wordpress &amp; MySQL DB In Kubernetes</title>
+      <link>https://zuhairyahya.site/post/deploy-wordpress-mysql-db/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/deploy-wordpress-mysql-db/</guid>
+      <description>Pada artikel ini saya akan menjelaskan bagaimana cara untuk mendeploy wordpress dan mysql db pada kubernetes cluster dengan menggunakan minikube</description>
+    </item>
+    
+  </channel>
+</rss>

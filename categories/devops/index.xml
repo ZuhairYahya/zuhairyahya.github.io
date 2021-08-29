@@ -71,6 +71,15 @@
     </item>
     
     <item>
+      <title>Deploy Wordpress &amp; MySQL DB In Kubernetes</title>
+      <link>https://zuhairyahya.site/post/deploy-wordpress-mysql-db/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/deploy-wordpress-mysql-db/</guid>
+      <description>Pada artikel ini saya akan menjelaskan bagaimana cara untuk mendeploy wordpress dan mysql db pada kubernetes cluster dengan menggunakan minikube</description>
+    </item>
+    
+    <item>
       <title>Install Openstack With Devstack</title>
       <link>https://zuhairyahya.site/post/install-openstack-with-devstack/</link>
       <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>

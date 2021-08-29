@@ -48,6 +48,11 @@
   </url>
   
   <url>
+    <loc>https://zuhairyahya.site/post/deploy-wordpress-mysql-db/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zuhairyahya.site/categories/devops/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url>
@@ -84,6 +89,11 @@
   
   <url>
     <loc>https://zuhairyahya.site/tags/microservice/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zuhairyahya.site/tags/mysql/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url>
   
