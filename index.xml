@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>Deploy Nginx in Kubernetes Cluster</title>
+      <link>https://zuhairyahya.site/post/deploy-nginx-in-kubernetes/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/deploy-nginx-in-kubernetes/</guid>
+      <description>Pada artikel ini akan membahas mengenai cara untuk mendeploy nginx pada kubernetes cluster yang sudah berjalan beserta servicenya</description>
+    </item>
+    
+    <item>
       <title>Weekly Reflection 2</title>
       <link>https://zuhairyahya.site/post/weekly_2_reflection/</link>
       <pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate>
