@@ -35,6 +35,15 @@
     </item>
     
     <item>
+      <title>Deploy Kubernetes Cluster Using Containerd</title>
+      <link>https://zuhairyahya.site/post/deploy-kubernetes-using-crio/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/deploy-kubernetes-using-crio/</guid>
+      <description>Pada artikel ini saya akan membahas mengenai bagaimana cara mendeploy kubernetes cluster menggunakan container runtime cri-o</description>
+    </item>
+    
+    <item>
       <title>Deploy Metrics Server in Kubernetes Cluster</title>
       <link>https://zuhairyahya.site/post/deploy-metrics-server/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
