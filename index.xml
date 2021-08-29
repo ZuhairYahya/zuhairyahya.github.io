@@ -8,6 +8,15 @@
     <language>en</language>
     <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Deploy Application Microservice Kaos Kaki</title>
+      <link>https://zuhairyahya.site/post/deploy-application-microservice/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/deploy-application-microservice/</guid>
+      <description>Pada artikel ini saya akan membahas cara mendeploy aplikasi microservice pada kubernetes cluster pada minikube</description>
+    </item>
+    
+    <item>
       <title>Deploy Horizontal Pod Autoscaler in Kubernetes Cluster</title>
       <link>https://zuhairyahya.site/post/deploy-hpa-kubernetes/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
