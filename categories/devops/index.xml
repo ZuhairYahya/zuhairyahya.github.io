@@ -35,7 +35,7 @@
     </item>
     
     <item>
-      <title>Deploy Kubernetes Cluster Using Containerd</title>
+      <title>Deploy Kubernetes Cluster Using CRI-O</title>
       <link>https://zuhairyahya.site/post/deploy-kubernetes-using-crio/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
       
