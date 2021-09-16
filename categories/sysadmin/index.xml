@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SysAdmin on Documentation Zuhair</title>
+    <link>https://zuhairyahya.site/categories/sysadmin/</link>
+    <description>Recent content in SysAdmin on Documentation Zuhair</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 16 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/categories/sysadmin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How To Setup IP Static In Ubuntu</title>
+      <link>https://zuhairyahya.site/post/how-to-setup-ip-static/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/how-to-setup-ip-static/</guid>
+      <description>Pada artikel ini saya akan menjelaskan mengenai cara setting ip static pada ubuntu</description>
+    </item>
+    
+  </channel>
+</rss>
