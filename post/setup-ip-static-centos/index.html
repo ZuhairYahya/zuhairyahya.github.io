@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html  dir="ltr" lang="en" data-theme=""><head>
-    <title> Zuhair Yahya | Ubuntu </title>
+    <title> Zuhair Yahya | How To Setup IP Static In Ubuntu </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.80.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="Engineer">
+    <meta name="description" content="Cara Setting IP Static Di Ubuntu">
     
     
     
@@ -32,10 +32,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="/tags/ubuntu/">
+    <link rel="canonical" href="/post/setup-ip-static-centos/">
 
     
-    <link rel="alternate" type="application/rss+xml" href="/tags/ubuntu/index.xml" title="Documentation Zuhair" />
     
     
     
@@ -56,8 +55,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://zuhairyahya.site/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Ubuntu"/>
-<meta name="twitter:description" content="Engineer"/>
+<meta name="twitter:title" content="How To Setup IP Static In Ubuntu"/>
+<meta name="twitter:description" content="Cara Setting IP Static Di Ubuntu"/>
 
 
     
@@ -139,41 +138,71 @@
 
     <div class="autopagerize_page_element">
         <div class="content">
-    <div class="archive  animated fadeInDown ">
-        <ul class="list-with-title">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
             
-                <div class="listing-title">2021</div>
+            <div class="post-title">
+                <h3>How To Setup IP Static In Ubuntu</h3>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/post/setup-ip-static-centos/" title="How To Setup IP Static In Ubuntu">How To Setup IP Static In Ubuntu</a>
-                                <div class="post-time"><span class="date"> Sep 16 
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date"> Thu, Sep 16, 2021 
+                                           </span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">One-minute read</span>
+                    </div>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/post/how-to-setup-ip-static/" title="How To Setup IP Static In Ubuntu">How To Setup IP Static In Ubuntu</a>
-                                <div class="post-time"><span class="date"> Sep 16 
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/post/how-change-username-login/" title="How To Change Username Login In Ubuntu">How To Change Username Login In Ubuntu</a>
-                                <div class="post-time"><span class="date"> Aug 29 
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-            
-        </ul>
+            </div>
+
+            <p>Pada artikel ini saya akan coba menjelaskan bagaimana cara mengkonfigurasi ip static pada Centos</p>
+<h2 id="setting-ip-static-di-centos">Setting IP Static Di Centos</h2>
+<ol>
+<li>Buka file konfigurasi</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ sudo vi /etc/sysconfig/network-scripts/ifcfg-enp0s3
+</code></pre></div><ol start="2">
+<li>Ubah script menjadi</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">TYPE</span><span class="o">=</span><span class="s2">&#34;Ethernet&#34;</span>
+<span class="nv">PROXY_METHOD</span><span class="o">=</span><span class="s2">&#34;none&#34;</span>
+<span class="nv">BROWSER_ONLY</span><span class="o">=</span><span class="s2">&#34;no&#34;</span>
+<span class="nv">BOOTPROTO</span><span class="o">=</span><span class="s2">&#34;static&#34;</span>
+<span class="nv">DEFROUTE</span><span class="o">=</span><span class="s2">&#34;yes&#34;</span>
+<span class="nv">IPV4_FAILURE_FATAL</span><span class="o">=</span><span class="s2">&#34;no&#34;</span>
+<span class="nv">IPV6INIT</span><span class="o">=</span><span class="s2">&#34;yes&#34;</span>
+<span class="nv">IPV6_AUTOCONF</span><span class="o">=</span><span class="s2">&#34;yes&#34;</span>
+<span class="nv">IPV6_DEFROUTE</span><span class="o">=</span><span class="s2">&#34;yes&#34;</span>
+<span class="nv">IPV6_FAILURE_FATAL</span><span class="o">=</span><span class="s2">&#34;no&#34;</span>
+<span class="nv">IPV6_ADDR_GEN_MODE</span><span class="o">=</span><span class="s2">&#34;stable-privacy&#34;</span>
+<span class="nv">NAME</span><span class="o">=</span><span class="s2">&#34;enp0s3&#34;</span>
+<span class="nv">UUID</span><span class="o">=</span><span class="s2">&#34;ae298adb-1b94-42a0-9dc9-a121c7561a5b&#34;</span>
+<span class="nv">DEVICE</span><span class="o">=</span><span class="s2">&#34;enp0s3&#34;</span>
+<span class="nv">ONBOOT</span><span class="o">=</span><span class="s2">&#34;yes&#34;</span>
+<span class="nv">IPADDR</span><span class="o">=</span>192.168.1.2
+<span class="nv">NETMASK</span><span class="o">=</span>255.255.255.0
+<span class="nv">GATEWAY</span><span class="o">=</span>192.168.1.1
+<span class="nv">DNS1</span><span class="o">=</span>8.8.8.8
+<span class="nv">DNS2</span><span class="o">=</span>8.8.4.4
+</code></pre></div><ol start="3">
+<li>Restart Network</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ sudo service network restart
+</code></pre></div><ol start="4">
+<li>Cek ip address</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ ip a
+</code></pre></div><p>Mungkin itu saja yang bisa saya jelaskan. Terimakasih</p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/sysadmin/">SysAdmin</a></span>
+                <span class="separator"><a class="tag" href="/tags/ubuntu/">Ubuntu</a><a class="tag" href="/tags/linux/">Linux</a></span>
+            </div>
+        </div>
+
+        
     </div>
+
 
         </div>
     </div>
