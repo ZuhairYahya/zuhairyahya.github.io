@@ -186,8 +186,24 @@
 </code></pre></div><ol start="6">
 <li>Buka port firewall tcp 8086</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">iptables -A INPUT -p tcp <span class="m">8086</span> -j ACCEPT
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">iptables -A INPUT -p tcp --dport <span class="m">8086</span> -j ACCEPT
 </code></pre></div><ol start="7">
+<li>Install iptables</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">yum install iptables-services
+</code></pre></div><ol start="8">
+<li>Start iptables</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">systemctl start iptables
+</code></pre></div><ol start="9">
+<li>Enable iptables</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">systemctl <span class="nb">enable</span> iptables
+</code></pre></div><ol start="10">
+<li>Cek status iptables</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">systemctl status iptables
+</code></pre></div><ol start="11">
 <li>Simpan iptables</li>
 </ol>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">service iptables save
