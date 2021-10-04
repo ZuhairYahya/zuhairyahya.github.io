@@ -203,12 +203,22 @@
   </url>
   
   <url>
+    <loc>https://zuhairyahya.site/tags/docker/</loc>
+    <lastmod>2021-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zuhairyahya.site/tags/grafana/</loc>
     <lastmod>2021-02-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://zuhairyahya.site/tags/influxdb/</loc>
+    <lastmod>2021-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zuhairyahya.site/post/install-docker/</loc>
     <lastmod>2021-02-23T00:00:00+00:00</lastmod>
   </url>
   
