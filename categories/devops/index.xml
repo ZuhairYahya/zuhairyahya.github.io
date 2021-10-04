@@ -6,7 +6,25 @@
     <description>Recent content in DevOps on Documentation Zuhair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How To Build Container</title>
+      <link>https://zuhairyahya.site/post/build-container/</link>
+      <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/build-container/</guid>
+      <description>Pada artikel ini saya akan membahas bagaimana cara membangun container pada Docker</description>
+    </item>
+    
+    <item>
+      <title>Install Docker</title>
+      <link>https://zuhairyahya.site/post/install-docker/</link>
+      <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/install-docker/</guid>
+      <description>Pada artikel ini saya akan membahas bagaimana cara untuk menginstall docker pada ubuntu</description>
+    </item>
+    
     <item>
       <title>Create ReplicaSet In Kubernetes</title>
       <link>https://zuhairyahya.site/post/create-replicaset-in-kubernetes/</link>
@@ -95,24 +113,6 @@
       
       <guid>https://zuhairyahya.site/post/install-openstack-with-devstack/</guid>
       <description>Pada artikel keenam ini, saya akan mencoba untuk menjelaskan mengenai cara menginstall Openstack pada ubuntu 18.</description>
-    </item>
-    
-    <item>
-      <title>How To Build Container</title>
-      <link>https://zuhairyahya.site/post/build-container/</link>
-      <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://zuhairyahya.site/post/build-container/</guid>
-      <description>Pada artikel ini saya akan membahas bagaimana cara membangun container pada Docker</description>
-    </item>
-    
-    <item>
-      <title>Install Docker</title>
-      <link>https://zuhairyahya.site/post/install-docker/</link>
-      <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://zuhairyahya.site/post/install-docker/</guid>
-      <description>Pada artikel ini saya akan membahas bagaimana cara untuk menginstall docker pada ubuntu</description>
     </item>
     
     <item>
