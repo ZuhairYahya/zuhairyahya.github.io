@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html  dir="ltr" lang="en" data-theme=""><head>
-    <title> Zuhair Yahya | Docker </title>
+    <title> Zuhair Yahya | How To Build Container </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.80.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="Engineer">
+    <meta name="description" content="Cara Membangun Container Di Docker">
     
     
     
@@ -32,10 +32,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="/tags/docker/">
+    <link rel="canonical" href="/post/build-container/">
 
     
-    <link rel="alternate" type="application/rss+xml" href="/tags/docker/index.xml" title="Documentation Zuhair" />
     
     
     
@@ -56,8 +55,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://zuhairyahya.site/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Docker"/>
-<meta name="twitter:description" content="Engineer"/>
+<meta name="twitter:title" content="How To Build Container"/>
+<meta name="twitter:description" content="Cara Membangun Container Di Docker"/>
 
 
     
@@ -139,32 +138,72 @@
 
     <div class="autopagerize_page_element">
         <div class="content">
-    <div class="archive  animated fadeInDown ">
-        <ul class="list-with-title">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
             
-                <div class="listing-title">2021</div>
+            <div class="post-title">
+                <h3>How To Build Container</h3>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/post/install-docker/" title="Install Docker">Install Docker</a>
-                                <div class="post-time"><span class="date"> Feb 23 
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date"> Tue, Feb 23, 2021 
+                                           </span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">One-minute read</span>
+                    </div>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/post/build-container/" title="How To Build Container">How To Build Container</a>
-                                <div class="post-time"><span class="date"> Feb 23 
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-            
-        </ul>
+            </div>
+
+            <p>Pada artikel ini saya akan membahas bagaimana cara membangun container pada Docker</p>
+<h2 id="build-container-docker">Build Container Docker</h2>
+<ol>
+<li>Update packges</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ sudo apt-get update
+</code></pre></div><ol start="2">
+<li>Masuk mode root</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ sudo -i
+</code></pre></div><ol start="3">
+<li>Jalankankan images redis</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker run -d --name<span class="o">=</span>database redis
+</code></pre></div><ol start="4">
+<li>Cek images</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker image ls
+</code></pre></div><ol start="5">
+<li>Cek container</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker container ls -a
+</code></pre></div><ol start="6">
+<li>Cek informasi proses container</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">ps aux <span class="p">|</span> grep redis
+</code></pre></div><ol start="10">
+<li>Delete image</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker image rm -f redis <span class="o">[</span>repository<span class="o">]</span>
+</code></pre></div><ol start="11">
+<li>Delete container</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker container rm -f 969a652130c1 <span class="o">[</span>container id<span class="o">]</span>
+</code></pre></div><ol start="12">
+<li>Menampilkan PID contianer</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker top database <span class="o">[</span>container name<span class="o">]</span>
+</code></pre></div><p>Mungkin itu saja yang dapat saya jelaskan. Terimakasih</p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/devops/">DevOps</a></span>
+                <span class="separator"><a class="tag" href="/tags/docker/">Docker</a><a class="tag" href="/tags/ubuntu/">Ubuntu</a></span>
+            </div>
+        </div>
+
+        
     </div>
+
 
         </div>
     </div>

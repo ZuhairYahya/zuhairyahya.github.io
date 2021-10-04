@@ -8,6 +8,15 @@
     <language>en</language>
     <lastBuildDate>Tue, 23 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How To Build Container</title>
+      <link>https://zuhairyahya.site/post/build-container/</link>
+      <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/build-container/</guid>
+      <description>Pada artikel ini saya akan membahas bagaimana cara membangun container pada Docker</description>
+    </item>
+    
+    <item>
       <title>Install Docker</title>
       <link>https://zuhairyahya.site/post/install-docker/</link>
       <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
