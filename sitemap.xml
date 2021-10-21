@@ -4,22 +4,42 @@
   
   <url>
     <loc>https://zuhairyahya.site/</loc>
-    <lastmod>2021-10-04T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://zuhairyahya.site/categories/</loc>
-    <lastmod>2021-10-04T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://zuhairyahya.site/categories/devops/</loc>
-    <lastmod>2021-10-04T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://zuhairyahya.site/tags/docker/</loc>
-    <lastmod>2021-10-04T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zuhairyahya.site/post/install-docker-20/</loc>
+    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zuhairyahya.site/post/</loc>
+    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zuhairyahya.site/tags/</loc>
+    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zuhairyahya.site/tags/ubuntu/</loc>
+    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -29,21 +49,6 @@
   
   <url>
     <loc>https://zuhairyahya.site/post/install-docker/</loc>
-    <lastmod>2021-10-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zuhairyahya.site/post/</loc>
-    <lastmod>2021-10-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zuhairyahya.site/tags/</loc>
-    <lastmod>2021-10-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zuhairyahya.site/tags/ubuntu/</loc>
     <lastmod>2021-10-04T00:00:00+00:00</lastmod>
   </url>
   

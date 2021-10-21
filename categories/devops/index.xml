@@ -6,7 +6,16 @@
     <description>Recent content in DevOps on Documentation Zuhair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 04 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Docker Ubuntu 20.04</title>
+      <link>https://zuhairyahya.site/post/install-docker-20/</link>
+      <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/install-docker-20/</guid>
+      <description>Pada artikel ini saya akan membahas bagaimana cara untuk menginstall docker pada ubuntu 20.</description>
+    </item>
+    
     <item>
       <title>How To Build Container</title>
       <link>https://zuhairyahya.site/post/build-container/</link>
