@@ -1,294 +1,181 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://zuhairyahya.site/</loc>
-    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-11-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://zuhairyahya.site/categories/</loc>
-    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-11-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://zuhairyahya.site/categories/devops/</loc>
-    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-11-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zuhairyahya.site/tags/influxdb/</loc>
+    <lastmod>2021-11-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zuhairyahya.site/post/install-influxdb-20/</loc>
+    <lastmod>2021-11-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zuhairyahya.site/tags/monitoring/</loc>
+    <lastmod>2021-11-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zuhairyahya.site/post/</loc>
+    <lastmod>2021-11-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zuhairyahya.site/tags/</loc>
+    <lastmod>2021-11-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/docker/</loc>
     <lastmod>2021-10-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/install-docker-20/</loc>
     <lastmod>2021-10-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zuhairyahya.site/post/</loc>
-    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zuhairyahya.site/tags/</loc>
-    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/ubuntu/</loc>
     <lastmod>2021-10-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/build-container/</loc>
     <lastmod>2021-10-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/install-docker/</loc>
     <lastmod>2021-10-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/centos/</loc>
     <lastmod>2021-09-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/setup-ip-static-centos/</loc>
     <lastmod>2021-09-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/how-to-setup-ip-static/</loc>
     <lastmod>2021-09-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/linux/</loc>
     <lastmod>2021-09-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/categories/sysadmin/</loc>
     <lastmod>2021-09-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/create-replicaset-in-kubernetes/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/deploy-application-microservice/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/deploy-hpa-kubernetes/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/deploy-kubernetes-cluster/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/deploy-kubernetes-using-containerd/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/deploy-kubernetes-using-crio/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/deploy-metrics-server/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/deploy-nginx-in-kubernetes/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/deploy-wordpress-mysql-db/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/github/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/how-change-username-login/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/how-to-deploy-hugo-in-github/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/hugo/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/kubernetes/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/categories/linux/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/microservice/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/mysql/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/categories/web/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/gojek/</loc>
     <lastmod>2021-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/weekly_2_reflection/</loc>
     <lastmod>2021-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/week_1_reflection/</loc>
     <lastmod>2021-07-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/generasi-gigih/</loc>
     <lastmod>2021-06-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/install-phpmyadmin/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/network/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/install-cpanel-whm/</loc>
     <lastmod>2021-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/install-moodle/</loc>
     <lastmod>2021-04-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/devstack/</loc>
     <lastmod>2021-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/install-openstack-with-devstack/</loc>
     <lastmod>2021-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/openstack/</loc>
     <lastmod>2021-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/grafana/</loc>
     <lastmod>2021-02-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zuhairyahya.site/tags/influxdb/</loc>
-    <lastmod>2021-02-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/install-grafana/</loc>
     <lastmod>2021-02-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/install-influxdb/</loc>
     <lastmod>2021-02-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/install-telegraf/</loc>
     <lastmod>2021-02-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zuhairyahya.site/tags/monitoring/</loc>
-    <lastmod>2021-02-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/container/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/install-kubectl/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/kubectl/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/about/</loc>
     <lastmod>2021-02-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/post/install-minikube/</loc>
     <lastmod>2021-02-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/minikube/</loc>
     <lastmod>2021-02-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zuhairyahya.site/tags/index/</loc>
   </url>
-  
 </urlset>

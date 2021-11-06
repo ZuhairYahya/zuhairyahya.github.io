@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html  dir="ltr" lang="en" data-theme=""><head>
-    <title> Zuhair Yahya | Install Kubectl </title>
+    <title> Zuhair Yahya | Install InfluxDB For Ubuntu 20.04 </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.89.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="Cara Install Kubectl">
+    <meta name="description" content="Cara Install InfluxDB di Ubuntu 20.04">
     
     
     
@@ -32,7 +32,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="/post/install-kubectl/">
+    <link rel="canonical" href="/post/install-influxdb-20/">
 
     
     
@@ -55,8 +55,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://zuhairyahya.site/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Install Kubectl"/>
-<meta name="twitter:description" content="Cara Install Kubectl"/>
+<meta name="twitter:title" content="Install InfluxDB For Ubuntu 20.04"/>
+<meta name="twitter:description" content="Cara Install InfluxDB di Ubuntu 20.04"/>
 
 
     
@@ -142,11 +142,11 @@
         <div class="post-content">
             
             <div class="post-title">
-                <h3>Install Kubectl</h3>
+                <h3>Install InfluxDB For Ubuntu 20.04</h3>
                 
                     <div class="info">
                         <em class="fas fa-calendar-day"></em>
-                        <span class="date"> Mon, Feb 22, 2021 
+                        <span class="date"> Sat, Nov 6, 2021 
                                            </span>
                         <em class="fas fa-stopwatch"></em>
                         <span class="reading-time">One-minute read</span>
@@ -154,50 +154,42 @@
                 
             </div>
 
-            <p>Pada artikel kedua ini akan dijelaskan bagaimana cara menginstall kubectl</p>
-<h2 id="install-kubectl">Install Kubectl</h2>
+            <p>Pada artikel ini saya akan menjelaskan cara menginstall influxdb pada ubuntu 20.04</p>
+<h2 id="install-influxdb">Install InfluxDB</h2>
 <ol>
-<li>Install Kubectl dengan menggunakan Curl</li>
+<li>Masukkan influxdb kedalam repository</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.18.0/bin/linux/amd64/kubectl
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">echo</span> <span class="s2">&#34;deb https://repos.influxdata.com/ubuntu focal stable&#34;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/influxdb.list
 </code></pre></div><ol start="2">
-<li>Jadikan biner kubectl agar dapat dijalankan</li>
+<li>Masukkan key influxdb</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">chmod +x ./kubectl
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo curl -sL https://repos.influxdata.com/influxdb.key <span class="p">|</span> sudo apt-key add -
 </code></pre></div><ol start="3">
-<li>Pindahkan binner kubectl kedalam PATH</li>
+<li>Update packages</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo mv ./kubectl /usr/local/bin/kubectl
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get update
 </code></pre></div><ol start="4">
-<li>Untuk mengecek semua versi kubectl</li>
+<li>Install influxdb</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">kubectl version
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get install influxdb
 </code></pre></div><ol start="5">
-<li>Untuk mengecek versi client kubectl</li>
+<li>Enable influxdb</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">kubectl version --client
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo systemctl <span class="nb">enable</span> --now influxdb
 </code></pre></div><ol start="6">
-<li>Untuk melihat detail koneksi cluster</li>
+<li>Start influxdb</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">kubectl config view
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo systemctl start influxdb
 </code></pre></div><ol start="7">
-<li>Untuk melihat info cluster</li>
+<li>Cek status influxdb</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">kubectl cluster-info
-</code></pre></div><ol start="8">
-<li>Untuk melihat semua Node di dalam namespace</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">kubectl get node
-</code></pre></div><ol start="9">
-<li>Untuk melihat detail Node di dalam namespace</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">kubectl describe node *nama node*
-</code></pre></div><p>Mungkin itu saja yang bisa dijelaskan, semoga bermanfaat.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo systemctl status influxdb
+</code></pre></div><p>Mungkin itu saja yang bisa saya jelaskan, terimakasih</p>
 </div>
         <div class="post-footer">
             <div class="info">
                 <span class="separator"><a class="category" href="/categories/devops/">DevOps</a></span>
-                <span class="separator"><a class="tag" href="/tags/kubectl/">Kubectl</a><a class="tag" href="/tags/linux/">Linux</a><a class="tag" href="/tags/container/">Container</a><a class="tag" href="/tags/kubernetes/">Kubernetes</a></span>
+                <span class="separator"><a class="tag" href="/tags/influxdb/">InfluxDB</a><a class="tag" href="/tags/monitoring/">Monitoring</a></span>
             </div>
         </div>
 
