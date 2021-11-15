@@ -5,10 +5,16 @@
     <loc>https://zuhairyahya.site/</loc>
     <lastmod>2021-11-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://zuhairyahya.site/tags/ansible/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://zuhairyahya.site/categories/</loc>
     <lastmod>2021-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zuhairyahya.site/categories/devops/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zuhairyahya.site/post/install-nginx-using-ansible/</loc>
     <lastmod>2021-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zuhairyahya.site/post/</loc>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ansible on Documentation Zuhair</title>
+    <link>https://zuhairyahya.site/tags/ansible/</link>
+    <description>Recent content in Ansible on Documentation Zuhair</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Nginx Using Ansible</title>
+      <link>https://zuhairyahya.site/post/install-nginx-using-ansible/</link>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/install-nginx-using-ansible/</guid>
+      <description>Halo pada artikel ini saya akan menjelaskan cara menginstall nginx menggunakan ansible sebagai automation dengan menggunakan 2 server ubuntu</description>
+    </item>
+    
+  </channel>
+</rss>

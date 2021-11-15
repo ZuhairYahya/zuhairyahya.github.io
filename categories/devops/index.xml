@@ -8,6 +8,15 @@
     <language>en</language>
     <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/categories/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Install Nginx Using Ansible</title>
+      <link>https://zuhairyahya.site/post/install-nginx-using-ansible/</link>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/install-nginx-using-ansible/</guid>
+      <description>Halo pada artikel ini saya akan menjelaskan cara menginstall nginx menggunakan ansible sebagai automation dengan menggunakan 2 server ubuntu</description>
+    </item>
+    
+    <item>
       <title>Provisioning Virtual Machine Using Vagrant</title>
       <link>https://zuhairyahya.site/post/create-vm-using-vagrant/</link>
       <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
