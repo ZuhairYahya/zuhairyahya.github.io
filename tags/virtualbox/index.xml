@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtualbox on Documentation Zuhair</title>
+    <link>https://zuhairyahya.site/tags/virtualbox/</link>
+    <description>Recent content in Virtualbox on Documentation Zuhair</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Provisioning Virtual Machine Using Vagrant</title>
+      <link>https://zuhairyahya.site/post/create-vm-using-vagrant/</link>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/create-vm-using-vagrant/</guid>
+      <description>Pada artikel ini saya akan menjelaskan cara provisioning vm menggunakan vagrant pada virtualbox</description>
+    </item>
+    
+  </channel>
+</rss>
