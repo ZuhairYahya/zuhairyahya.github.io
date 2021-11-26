@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" data-theme=""><head>
+    <title> Zuhair Yahya | Automation Deploy Kubernetes Cluster Using Ansible </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.89.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Cara Automasi Deploy Kubernetes Cluster Menggunakan Ansible">
+    
+    
+    
+    <link rel="stylesheet"
+        href="/css/style.min.7ec96a07e10b60a6997be730fc5d4d3467a225c68515a7df6ae17ac2500f828c.css"
+        integrity="sha256-fslqB&#43;ELYKaZe&#43;cw/F1NNGeiJcaFFaffauF6wlAPgow="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    
+    <link rel="stylesheet"
+        href="/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css"
+        integrity="sha256-95jL2pqqOPies4vmQUvQgs/XGmeAN1y/Z7bS&#43;yuWSR4="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="/post/configure-kubernetes-using-ansible/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="/js/anatole-header.min.0c05c0a90d28c968a1cad4fb31abd0b8e1264e788ccefed022ae1d3b6f627514.js"
+            integrity="sha256-DAXAqQ0oyWihytT7MavQuOEmTniMzv7QIq4dO29idRQ="
+            crossorigin="anonymous"></script>
+
+
+    
+        
+        
+        <script type="text/javascript"
+                src="/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js"
+                integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus="
+                crossorigin="anonymous"></script>
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://zuhairyahya.site/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="Automation Deploy Kubernetes Cluster Using Ansible"/>
+<meta name="twitter:description" content="Cara Automasi Deploy Kubernetes Cluster Menggunakan Ansible"/>
+
+
+    
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="/images/profile-picture.jpg" alt="profile picture">
+            <h3 title=""><a href="/">Zuhair Yahya</a></h3>
+            <div class="description">
+                <p>Engineer</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://linkedin.com/in/zuhair-yahya-549b80156/" rel="me" aria-label="Linkedin">
+                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/ZuhairYahya" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:mail@zuhairyahya57@gmail.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Zuhair Yahya  2021 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+        
+        
+            <li class="theme-switch-item">
+                <a class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            
+            <div class="post-title">
+                <h3>Automation Deploy Kubernetes Cluster Using Ansible</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date"> Mon, Jan 1, 0001 
+                                           </span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">One-minute read</span>
+                    </div>
+                
+            </div>
+
+            <p>Pada artikel ini saya akan menjelaskan mengenai cara automation deploy kubernetes menggunakan ansible</p>
+<h2 id="install-ansible">Install Ansible</h2>
+<ol>
+<li>Update packges</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get update
+</code></pre></div><ol start="2">
+<li>Install properties</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get install software-properties-common -y
+</code></pre></div><ol start="3">
+<li>Install ansible</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get install ansible -y
+</code></pre></div><h2 id="deploy-kubernetes">Deploy kubernetes</h2>
+<ol start="4">
+<li>Create inventory</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="o">[</span>master<span class="o">]</span>
+master <span class="nv">ansible_host</span><span class="o">=</span>10.0.0.4 <span class="nv">ansible_user</span><span class="o">=</span>master
+
+<span class="o">[</span>worker<span class="o">]</span>
+worker <span class="nv">ansible_host</span><span class="o">=</span>10.0.0.5 <span class="nv">ansible_user</span><span class="o">=</span>worker
+
+<span class="o">[</span>all:vars<span class="o">]</span>
+<span class="nv">ansible_ssh_private_key_file</span><span class="o">=</span>~/.ssh/id_rsa
+</code></pre></div><ol start="5">
+<li>Create ansible.cfg</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">vi ansible.cfg
+
+<span class="o">[</span>defaults<span class="o">]</span>
+<span class="nv">inventory</span> <span class="o">=</span> ./inventory
+</code></pre></div><ol start="6">
+<li>Create ansible playbook for kubernetes dependencies</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">vi kube-dependencies.yml
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l">all</span><span class="w">
+</span><span class="w">  </span><span class="nt">become</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
+</span><span class="w">  </span><span class="nt">tasks</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install Docker</span><span class="w">
+</span><span class="w">      </span><span class="nt">apt</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">docker.io</span><span class="w">
+</span><span class="w">        </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">present</span><span class="w">
+</span><span class="w">        </span><span class="nt">update_cache</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">    
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">start Docker</span><span class="w">
+</span><span class="w">      </span><span class="nt">service</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">docker</span><span class="w">
+</span><span class="w">        </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">started</span><span class="w">
+</span><span class="w">        </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">    
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install APT Transport HTTPS</span><span class="w">
+</span><span class="w">      </span><span class="nt">apt</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">apt-transport-https</span><span class="w">
+</span><span class="w">        </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">present</span><span class="w">
+</span><span class="w">
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">add kubernetes apt-key</span><span class="w">
+</span><span class="w">      </span><span class="nt">apt_key</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">https://packages.cloud.google.com/apt/doc/apt-key.gpg</span><span class="w">
+</span><span class="w">        </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">present</span><span class="w">
+</span><span class="w">
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">add kubernetes apt repository</span><span class="w">
+</span><span class="w">      </span><span class="nt">apt_repository</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l">deb http://apt.kubernetes.io/ kubernetes-xenial main</span><span class="w">
+</span><span class="w">        </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">present</span><span class="w">
+</span><span class="w">        </span><span class="nt">filename</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;kubernetes.list&#39;</span><span class="w">
+</span><span class="w">        
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">install kubectl</span><span class="w">
+</span><span class="w">      </span><span class="nt">apt</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">kubectl=1.19.0-00</span><span class="w">
+</span><span class="w">        </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">present</span><span class="w">
+</span><span class="w">        </span><span class="nt">force</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
+</span><span class="w">    
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">install kubelet</span><span class="w">
+</span><span class="w">      </span><span class="nt">apt</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">kubelet=1.19.0-00</span><span class="w">
+</span><span class="w">        </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">present</span><span class="w">
+</span><span class="w">        </span><span class="nt">force</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
+</span><span class="w">        </span><span class="nt">update_cache</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">    
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">install kubeadm</span><span class="w">
+</span><span class="w">      </span><span class="nt">apt</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">kubeadm=1.19.0-00</span><span class="w">
+</span><span class="w">        </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">present</span><span class="w">
+</span><span class="w">        </span><span class="nt">force</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
+</span><span class="w">    
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Start kubelet</span><span class="w">
+</span><span class="w">      </span><span class="nt">service</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">kubelet</span><span class="w">
+</span><span class="w">        </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">restarted</span><span class="w">
+</span><span class="w">        </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></code></pre></div><ol start="7">
+<li>Jalankan ansible playbook</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">ansible-playbook kube-dependencies.yml
+</code></pre></div><ol start="8">
+<li>Create ansible playbook for master</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">vi master.yml
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l">master</span><span class="w">
+</span><span class="w">  </span><span class="nt">become</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
+</span><span class="w">  </span><span class="nt">tasks</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Init docker user</span><span class="w">
+</span><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l">usermod -aG docker $USER</span><span class="w">
+</span><span class="w">
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Remove swap</span><span class="w">
+</span><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l">swapoff -a</span><span class="w">
+</span><span class="w">    
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Initiate cluster</span><span class="w">
+</span><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l">kubeadm init --pod-network-cidr=10.244.0.0/16 &gt;&gt; initialized.txt</span><span class="w">
+</span><span class="w">      </span><span class="nt">args</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">chdir</span><span class="p">:</span><span class="w"> </span><span class="l">$HOME</span><span class="w">
+</span><span class="w">        </span><span class="nt">creates</span><span class="p">:</span><span class="w"> </span><span class="l">initialized.txt</span><span class="w">
+</span><span class="w">    
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Enabled Docker</span><span class="w">
+</span><span class="w">      </span><span class="nt">service</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">docker</span><span class="w">
+</span><span class="w">        </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">    
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Enabled Docker</span><span class="w">
+</span><span class="w">      </span><span class="nt">service</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">docker</span><span class="w">
+</span><span class="w">        </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">restarted</span><span class="w">
+</span><span class="w">
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Create .kube directory</span><span class="w">
+</span><span class="w">      </span><span class="nt">become</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
+</span><span class="w">      </span><span class="nt">become_user</span><span class="p">:</span><span class="w"> </span><span class="l">master</span><span class="w">
+</span><span class="w">      </span><span class="nt">file</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">$HOME/.kube</span><span class="w">
+</span><span class="w">        </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">directory</span><span class="w">
+</span><span class="w">        </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="m">0755</span><span class="w">
+</span><span class="w">    
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">copy admin.conf to kube config</span><span class="w">
+</span><span class="w">      </span><span class="nt">copy</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">src</span><span class="p">:</span><span class="w"> </span><span class="l">/etc/kubernetes/admin.conf</span><span class="w">
+</span><span class="w">        </span><span class="nt">dest</span><span class="p">:</span><span class="w"> </span><span class="l">/home/master/.kube/config</span><span class="w">
+</span><span class="w">        </span><span class="nt">remote_src</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
+</span><span class="w">        </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l">master</span><span class="w">
+</span><span class="w">    
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install pod network</span><span class="w">
+</span><span class="w">      </span><span class="nt">become</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
+</span><span class="w">      </span><span class="nt">become_user</span><span class="p">:</span><span class="w"> </span><span class="l">master</span><span class="w">
+</span><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l">kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml &gt;&gt; pod_network_setup.txt</span><span class="w">
+</span><span class="w">      </span><span class="nt">args</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">chdir</span><span class="p">:</span><span class="w"> </span><span class="l">$HOME</span><span class="w">
+</span><span class="w">        </span><span class="nt">creates</span><span class="p">:</span><span class="w"> </span><span class="l">pod_network_setup.txt</span><span class="w">
+</span></code></pre></div><ol start="9">
+<li>Jalankan ansible playbook for master.yml</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">ansible-playbook master.yml
+</code></pre></div><ol start="10">
+<li>Create ansible playbook for worker.yml</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">vi worker.yml
+</code></pre></div><ol start="11">
+<li>Jalankan ansible playbook for worker.yml</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l">master</span><span class="w">
+</span><span class="w">  </span><span class="nt">become</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
+</span><span class="w">  </span><span class="nt">gather_facts</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w">  </span><span class="nt">tasks</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">get join command</span><span class="w">
+</span><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l">kubeadm token create --print-join-command</span><span class="w">
+</span><span class="w">      </span><span class="nt">register</span><span class="p">:</span><span class="w"> </span><span class="l">join_command_raw</span><span class="w">
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">set join command</span><span class="w">
+</span><span class="w">      </span><span class="nt">set_fact</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">join_command</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;{{ join_command_raw.stdout_lines[0] }}&#34;</span><span class="w">
+</span><span class="w"> 
+</span><span class="w"></span>- <span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l">worker</span><span class="w">
+</span><span class="w">  </span><span class="nt">become</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
+</span><span class="w">  </span><span class="nt">tasks</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">remove swap</span><span class="w">
+</span><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;swapoff -a&#34;</span><span class="w">
+</span><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">join cluster	</span><span class="w">
+</span><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;{{ hostvars[&#39;master&#39;].join_command }} &gt;&gt; node_joined.txt&#34;</span><span class="w">
+</span><span class="w">      </span><span class="nt">args</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">chdir</span><span class="p">:</span><span class="w"> </span><span class="l">$HOME</span><span class="w">
+</span><span class="w">        </span><span class="nt">creates</span><span class="p">:</span><span class="w"> </span><span class="l">node_joined.txt</span><span class="w">
+</span></code></pre></div><p>Mungkin itu saja yang dapat saya jelaskan, terimakasih</p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/devops/">DevOps</a></span>
+                <span class="separator"><a class="tag" href="/tags/kubernetes/">Kubernetes</a><a class="tag" href="/tags/ansible/">Ansible</a></span>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="/js/medium-zoom.min.2d6fd0be87fa98f0c9b4dc2536b312bbca48757f584f6ea1f394abc9bcc38fbc.js"
+        integrity="sha256-LW/Qvof6mPDJtNwlNrMSu8pIdX9YT26h85SrybzDj7w="
+        crossorigin="anonymous"></script></body>
+
+</html>
