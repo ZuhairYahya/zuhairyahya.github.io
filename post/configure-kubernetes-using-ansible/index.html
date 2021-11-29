@@ -309,10 +309,7 @@ worker <span class="nv">ansible_host</span><span class="o">=</span>10.0.0.5 <spa
 <li>Create ansible playbook for worker.yml</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">vi worker.yml
-</code></pre></div><ol start="11">
-<li>Jalankan ansible playbook for worker.yml</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l">master</span><span class="w">
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l">master</span><span class="w">
 </span><span class="w">  </span><span class="nt">become</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
 </span><span class="w">  </span><span class="nt">gather_facts</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
 </span><span class="w">  </span><span class="nt">tasks</span><span class="p">:</span><span class="w">
@@ -333,7 +330,11 @@ worker <span class="nv">ansible_host</span><span class="o">=</span>10.0.0.5 <spa
 </span><span class="w">      </span><span class="nt">args</span><span class="p">:</span><span class="w">
 </span><span class="w">        </span><span class="nt">chdir</span><span class="p">:</span><span class="w"> </span><span class="l">$HOME</span><span class="w">
 </span><span class="w">        </span><span class="nt">creates</span><span class="p">:</span><span class="w"> </span><span class="l">node_joined.txt</span><span class="w">
-</span></code></pre></div><p>Mungkin itu saja yang dapat saya jelaskan, terimakasih</p>
+</span></code></pre></div><ol start="11">
+<li>Jalankan ansible playbook for worker.yml</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">ansible-playbook worker.yml
+</code></pre></div><p>Mungkin itu saja yang dapat saya jelaskan, terimakasih</p>
 </div>
         <div class="post-footer">
             <div class="info">
