@@ -6,7 +6,16 @@
     <description>Recent content in Ansible on Documentation Zuhair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automation Deploy Kubernetes Cluster Using Ansible</title>
+      <link>https://zuhairyahya.site/post/configure-kubernetes-using-ansible/</link>
+      <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/configure-kubernetes-using-ansible/</guid>
+      <description>Pada artikel ini saya akan menjelaskan mengenai cara automation deploy kubernetes menggunakan ansible</description>
+    </item>
+    
     <item>
       <title>Install Nginx Using Ansible</title>
       <link>https://zuhairyahya.site/post/install-nginx-using-ansible/</link>
@@ -14,15 +23,6 @@
       
       <guid>https://zuhairyahya.site/post/install-nginx-using-ansible/</guid>
       <description>Halo pada artikel ini saya akan menjelaskan cara menginstall nginx menggunakan ansible sebagai automation dengan menggunakan 2 server ubuntu</description>
-    </item>
-    
-    <item>
-      <title>Automation Deploy Kubernetes Cluster Using Ansible</title>
-      <link>https://zuhairyahya.site/post/configure-kubernetes-using-ansible/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zuhairyahya.site/post/configure-kubernetes-using-ansible/</guid>
-      <description>Pada artikel ini saya akan menjelaskan mengenai cara automation deploy kubernetes menggunakan ansible</description>
     </item>
     
   </channel>
