@@ -6,7 +6,16 @@
     <description>Recent content in Docker on Documentation Zuhair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 21 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deploy Docker Using Vagrant</title>
+      <link>https://zuhairyahya.site/post/deploy-docker-using-vagrant/</link>
+      <pubDate>Tue, 30 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/deploy-docker-using-vagrant/</guid>
+      <description>Pada artikel ini saya akan menjelaskan cara deploy docker menggunakan vagrant sebagai provisioning menggunakan ubuntu 20.</description>
+    </item>
+    
     <item>
       <title>Install Docker Ubuntu 20.04</title>
       <link>https://zuhairyahya.site/post/install-docker-20/</link>

@@ -3,7 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://zuhairyahya.site/</loc>
-    <lastmod>2021-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zuhairyahya.site/categories/</loc>
+    <lastmod>2021-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zuhairyahya.site/post/deploy-docker-using-vagrant/</loc>
+    <lastmod>2021-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zuhairyahya.site/categories/devops/</loc>
+    <lastmod>2021-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zuhairyahya.site/tags/docker/</loc>
+    <lastmod>2021-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zuhairyahya.site/post/</loc>
+    <lastmod>2021-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zuhairyahya.site/tags/</loc>
+    <lastmod>2021-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zuhairyahya.site/tags/vagrant/</loc>
+    <lastmod>2021-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zuhairyahya.site/tags/virtualbox/</loc>
+    <lastmod>2021-11-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zuhairyahya.site/tags/ansible/</loc>
     <lastmod>2021-11-26T00:00:00+00:00</lastmod>
@@ -11,31 +35,13 @@
     <loc>https://zuhairyahya.site/post/configure-kubernetes-using-ansible/</loc>
     <lastmod>2021-11-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zuhairyahya.site/categories/</loc>
-    <lastmod>2021-11-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zuhairyahya.site/categories/devops/</loc>
-    <lastmod>2021-11-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://zuhairyahya.site/tags/kubernetes/</loc>
-    <lastmod>2021-11-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zuhairyahya.site/post/</loc>
-    <lastmod>2021-11-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zuhairyahya.site/tags/</loc>
     <lastmod>2021-11-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zuhairyahya.site/post/install-nginx-using-ansible/</loc>
     <lastmod>2021-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zuhairyahya.site/post/create-vm-using-vagrant/</loc>
-    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zuhairyahya.site/tags/vagrant/</loc>
-    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zuhairyahya.site/tags/virtualbox/</loc>
     <lastmod>2021-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zuhairyahya.site/tags/influxdb/</loc>
@@ -46,9 +52,6 @@
   </url><url>
     <loc>https://zuhairyahya.site/tags/monitoring/</loc>
     <lastmod>2021-11-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zuhairyahya.site/tags/docker/</loc>
-    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zuhairyahya.site/post/install-docker-20/</loc>
     <lastmod>2021-10-21T00:00:00+00:00</lastmod>
