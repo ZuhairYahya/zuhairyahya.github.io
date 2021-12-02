@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Documentation Zuhair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 30 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How To Install Gitlab On Ubuntu</title>
+      <link>https://zuhairyahya.site/post/how-to-install-gitlab/</link>
+      <pubDate>Thu, 02 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/how-to-install-gitlab/</guid>
+      <description>Pada artikel ini saya akan menjelaskan mengenai cara install Gitlab CE di ubuntu server</description>
+    </item>
+    
     <item>
       <title>Deploy Docker Using Vagrant</title>
       <link>https://zuhairyahya.site/post/deploy-docker-using-vagrant/</link>
@@ -14,15 +23,6 @@
       
       <guid>https://zuhairyahya.site/post/deploy-docker-using-vagrant/</guid>
       <description>Pada artikel ini saya akan menjelaskan cara deploy docker menggunakan vagrant sebagai provisioning menggunakan ubuntu 20.</description>
-    </item>
-    
-    <item>
-      <title>How To Install Gitlab On Ubuntu</title>
-      <link>https://zuhairyahya.site/post/how-to-install-gitlab/</link>
-      <pubDate>Tue, 30 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://zuhairyahya.site/post/how-to-install-gitlab/</guid>
-      <description>Pada artikel ini saya akan menjelaskan mengenai cara install Gitlab CE di ubuntu server</description>
     </item>
     
     <item>
