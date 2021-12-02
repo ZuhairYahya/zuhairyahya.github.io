@@ -6,7 +6,16 @@
     <description>Recent content in Ubuntu on Documentation Zuhair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 21 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How To Install Gitlab On Ubuntu</title>
+      <link>https://zuhairyahya.site/post/how-to-install-gitlab/</link>
+      <pubDate>Tue, 30 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/how-to-install-gitlab/</guid>
+      <description>Pada artikel ini saya akan menjelaskan mengenai cara install Gitlab CE di ubuntu server</description>
+    </item>
+    
     <item>
       <title>Install Docker Ubuntu 20.04</title>
       <link>https://zuhairyahya.site/post/install-docker-20/</link>

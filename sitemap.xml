@@ -17,10 +17,19 @@
     <loc>https://zuhairyahya.site/tags/docker/</loc>
     <lastmod>2021-11-30T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://zuhairyahya.site/tags/gitlab/</loc>
+    <lastmod>2021-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zuhairyahya.site/post/how-to-install-gitlab/</loc>
+    <lastmod>2021-11-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://zuhairyahya.site/post/</loc>
     <lastmod>2021-11-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zuhairyahya.site/tags/</loc>
+    <lastmod>2021-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zuhairyahya.site/tags/ubuntu/</loc>
     <lastmod>2021-11-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zuhairyahya.site/tags/vagrant/</loc>
@@ -54,9 +63,6 @@
     <lastmod>2021-11-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zuhairyahya.site/post/install-docker-20/</loc>
-    <lastmod>2021-10-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zuhairyahya.site/tags/ubuntu/</loc>
     <lastmod>2021-10-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zuhairyahya.site/post/build-container/</loc>
