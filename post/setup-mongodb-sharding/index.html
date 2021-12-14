@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" data-theme=""><head>
+    <title> Zuhair Yahya | Setup MongoDB Sharding </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.89.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Setup MongoDB Sharding">
+    
+    
+    
+    <link rel="stylesheet"
+        href="/css/style.min.7ec96a07e10b60a6997be730fc5d4d3467a225c68515a7df6ae17ac2500f828c.css"
+        integrity="sha256-fslqB&#43;ELYKaZe&#43;cw/F1NNGeiJcaFFaffauF6wlAPgow="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    
+    <link rel="stylesheet"
+        href="/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css"
+        integrity="sha256-95jL2pqqOPies4vmQUvQgs/XGmeAN1y/Z7bS&#43;yuWSR4="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="/post/setup-mongodb-sharding/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="/js/anatole-header.min.0c05c0a90d28c968a1cad4fb31abd0b8e1264e788ccefed022ae1d3b6f627514.js"
+            integrity="sha256-DAXAqQ0oyWihytT7MavQuOEmTniMzv7QIq4dO29idRQ="
+            crossorigin="anonymous"></script>
+
+
+    
+        
+        
+        <script type="text/javascript"
+                src="/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js"
+                integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus="
+                crossorigin="anonymous"></script>
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://zuhairyahya.site/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="Setup MongoDB Sharding"/>
+<meta name="twitter:description" content="Setup MongoDB Sharding"/>
+
+
+    
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="/images/profile-picture.jpg" alt="profile picture">
+            <h3 title=""><a href="/">Zuhair Yahya</a></h3>
+            <div class="description">
+                <p>Engineer</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://linkedin.com/in/zuhair-yahya-549b80156/" rel="me" aria-label="Linkedin">
+                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/ZuhairYahya" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:mail@zuhairyahya57@gmail.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Zuhair Yahya  2021 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+        
+        
+            <li class="theme-switch-item">
+                <a class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            
+            <div class="post-title">
+                <h3>Setup MongoDB Sharding</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date"> Mon, Dec 13, 2021 
+                                           </span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">3-minute read</span>
+                    </div>
+                
+            </div>
+
+            <p>Pada artikel ini saya akan menjelaskan mengenai cara melakukan sharding pada MongoDB</p>
+<h2 id="install-mongodb">Install MongoDB</h2>
+<p>Untuk Proses install MongoDB, anda dapat melihat tutorial pada artikel <a href="https://zuhairyahya.site/post/install-mongodb-using-vagrant/">INSTALL MONGODB USING VAGRANT</a></p>
+<h2 id="set-up-mongodb-authentication">Set Up MongoDB Authentication</h2>
+<ol>
+<li>Create admin</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">mongo
+</code></pre></div><ol start="2">
+<li>connect admin</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">use admin
+</code></pre></div><ol start="3">
+<li>create administrative user with root</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">db.createUser<span class="o">({</span>user: <span class="s2">&#34;mongo-admin&#34;</span>, pwd: <span class="s2">&#34;password&#34;</span>, roles:<span class="o">[{</span>role: <span class="s2">&#34;root&#34;</span>, db: <span class="s2">&#34;admin&#34;</span><span class="o">}]})</span>
+</code></pre></div><ol start="4">
+<li>exit mongo</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">exit</span>
+</code></pre></div><h2 id="initialize-config-servers">Initialize Config Servers</h2>
+<ol start="5">
+<li>configure mongod.conf</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo vi /etc/mongod.conf
+
+<span class="c1"># mongod.conf</span>
+
+<span class="c1"># for documentation of all options, see:</span>
+<span class="c1">#   http://docs.mongodb.org/manual/reference/configuration-options/</span>
+
+<span class="c1"># Where and how to store data.</span>
+storage:
+  dbPath: /var/lib/mongodb
+  journal:
+    enabled: <span class="nb">true</span>
+<span class="c1">#  engine:</span>
+<span class="c1">#  wiredTiger:</span>
+
+<span class="c1"># where to write logging data.</span>
+systemLog:
+  destination: file
+  logAppend: <span class="nb">true</span>
+  path: /var/log/mongodb/mongod.log
+
+<span class="c1"># network interfaces</span>
+net:
+  port: <span class="m">27017</span>
+  bindIp: mongodb
+
+<span class="c1"># how the process runs</span>
+processManagement:
+  timeZoneInfo: /usr/share/zoneinfo
+
+<span class="c1">#security:</span>
+
+<span class="c1">#operationProfiling:</span>
+
+replication:
+    replSetName: configReplSet
+
+sharding:
+    clusterRole: <span class="s2">&#34;configsvr&#34;</span>
+
+<span class="c1">## Enterprise-Only Options:</span>
+
+<span class="c1">#auditLog:</span>
+
+<span class="c1">#snmp:</span>
+</code></pre></div><ol start="6">
+<li>restart mongo service</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo systemctl restart mongod.service
+</code></pre></div><ol start="7">
+<li>Connect mongoDB to port 27017 with administrative user</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">mongo mongodb:27017 -u mongo-admin -p --authenticationDatabase admin
+</code></pre></div><ol start="8">
+<li>initiate replicaset</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">rs.initiate<span class="o">(</span> <span class="o">{</span> _id: <span class="s2">&#34;configReplSet&#34;</span>, configsvr: true, members: <span class="o">[</span> <span class="o">{</span> _id: 0, host: <span class="s2">&#34;mongodb:27017&#34;</span> <span class="o">}</span> <span class="o">]</span> <span class="o">}</span> <span class="o">)</span>
+</code></pre></div><ol start="9">
+<li>check status replicaset</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">rs.status<span class="o">()</span>
+</code></pre></div><h2 id="configure-query-router">Configure Query Router</h2>
+<ol start="10">
+<li>Create a new configuration file</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo vi /etc/mongos.conf
+
+<span class="c1"># mongos.conf</span>
+
+<span class="c1"># for documentation of all options, see:</span>
+<span class="c1">#   http://docs.mongodb.org/manual/reference/configuration-options/</span>
+
+<span class="c1"># Where and how to store data.</span>
+<span class="c1">#storage:</span>
+<span class="c1">#  dbPath: /var/lib/mongodb</span>
+<span class="c1">#  journal:</span>
+<span class="c1">#    enabled: true</span>
+<span class="c1">#  engine:</span>
+<span class="c1">#  wiredTiger:</span>
+
+<span class="c1"># where to write logging data.</span>
+systemLog:
+  destination: file
+  logAppend: <span class="nb">true</span>
+  path: /var/log/mongodb/mongos.log
+
+<span class="c1"># network interfaces</span>
+net:
+  port: <span class="m">27019</span>
+  bindIp: mongodb
+
+<span class="c1"># how the process runs</span>
+processManagement:
+  timeZoneInfo: /usr/share/zoneinfo
+
+<span class="c1">#security:</span>
+
+<span class="c1">#operationProfiling:</span>
+
+sharding:
+    configDB: configReplSet/mongodb:27017
+
+<span class="c1">## Enterprise-Only Options:</span>
+
+<span class="c1">#auditLog:</span>
+
+<span class="c1">#snmp:</span>
+</code></pre></div><ol start="11">
+<li>Create a new systemd unit file</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo vi /lib/systemd/system/mongos.service
+
+<span class="o">[</span>Unit<span class="o">]</span>
+<span class="nv">Description</span><span class="o">=</span>MongoDB Cluster Router
+<span class="nv">Documentation</span><span class="o">=</span>https://docs.mongodb.org/manual
+<span class="nv">After</span><span class="o">=</span>network-online.target
+<span class="nv">Wants</span><span class="o">=</span>network-online.target
+
+<span class="o">[</span>Service<span class="o">]</span>
+<span class="nv">User</span><span class="o">=</span>mongodb
+<span class="nv">Group</span><span class="o">=</span>mongodb
+<span class="c1">#EnvironmentFile=-/etc/default/mongos</span>
+<span class="nv">ExecStart</span><span class="o">=</span>/usr/bin/mongos --config /etc/mongos.conf
+<span class="nv">PIDFile</span><span class="o">=</span>/var/run/mongodb/mongos.pid
+<span class="c1"># file size</span>
+<span class="nv">LimitFSIZE</span><span class="o">=</span>infinity
+<span class="c1"># cpu time</span>
+<span class="nv">LimitCPU</span><span class="o">=</span>infinity
+<span class="c1"># virtual memory size</span>
+<span class="nv">LimitAS</span><span class="o">=</span>infinity
+<span class="c1"># open files</span>
+<span class="nv">LimitNOFILE</span><span class="o">=</span><span class="m">64000</span>
+<span class="c1"># processes/threads</span>
+<span class="nv">LimitNPROC</span><span class="o">=</span><span class="m">64000</span>
+<span class="c1"># locked memory</span>
+<span class="nv">LimitMEMLOCK</span><span class="o">=</span>infinity
+<span class="c1"># total threads (user+kernel)</span>
+<span class="nv">TasksMax</span><span class="o">=</span>infinity
+<span class="nv">TasksAccounting</span><span class="o">=</span><span class="nb">false</span>
+
+<span class="c1"># Recommended limits for mongos as specified in</span>
+<span class="c1"># https://docs.mongodb.com/manual/reference/ulimit/#recommended-ulimit-settings</span>
+
+<span class="o">[</span>Install<span class="o">]</span>
+<span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
+</code></pre></div><ol start="12">
+<li>start mongos service</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo systemctl start mongos.service
+</code></pre></div><ol start="13">
+<li>enable mongos service</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo systemctl enable mongos.service
+</code></pre></div><ol start="14">
+<li>check status mongos service</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo systemctl status mongos.service
+</code></pre></div><h2 id="add-sharding">Add sharding</h2>
+<ol start="15">
+<li>create new configuration file on shard1</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo vi /etc/mongod.conf
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># mongod.conf</span>
+
+<span class="c1"># for documentation of all options, see:</span>
+<span class="c1">#   http://docs.mongodb.org/manual/reference/configuration-options/</span>
+
+<span class="c1"># Where and how to store data.</span>
+storage:
+  dbPath: /var/lib/mongodb
+  journal:
+    enabled: <span class="nb">true</span>
+<span class="c1">#  engine:</span>
+<span class="c1">#  wiredTiger:</span>
+
+<span class="c1"># where to write logging data.</span>
+systemLog:
+  destination: file
+  logAppend: <span class="nb">true</span>
+  path: /var/log/mongodb/mongod.log
+
+<span class="c1"># network interfaces</span>
+net:
+  port: <span class="m">27017</span>
+  bindIp: mongoshard1
+
+
+<span class="c1"># how the process runs</span>
+processManagement:
+  timeZoneInfo: /usr/share/zoneinfo
+
+<span class="c1">#security:</span>
+
+<span class="c1">#operationProfiling:</span>
+
+replication:
+  replSetName: shardReplSet
+
+sharding:
+    clusterRole: <span class="s2">&#34;shardsvr&#34;</span>
+
+<span class="c1">## Enterprise-Only Options:</span>
+
+<span class="c1">#auditLog:</span>
+</code></pre></div><ol start="16">
+<li>create new configuration file on shard1</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo vi /etc/mongod.conf
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># mongod.conf</span>
+
+<span class="c1"># for documentation of all options, see:</span>
+<span class="c1">#   http://docs.mongodb.org/manual/reference/configuration-options/</span>
+
+<span class="c1"># Where and how to store data.</span>
+storage:
+  dbPath: /var/lib/mongodb
+  journal:
+    enabled: <span class="nb">true</span>
+<span class="c1">#  engine:</span>
+<span class="c1">#  wiredTiger:</span>
+
+<span class="c1"># where to write logging data.</span>
+systemLog:
+  destination: file
+  logAppend: <span class="nb">true</span>
+  path: /var/log/mongodb/mongod.log
+
+<span class="c1"># network interfaces</span>
+net:
+  port: <span class="m">27017</span>
+  bindIp: mongoshard2
+
+
+<span class="c1"># how the process runs</span>
+processManagement:
+  timeZoneInfo: /usr/share/zoneinfo
+
+<span class="c1">#security:</span>
+
+<span class="c1">#operationProfiling:</span>
+
+replication:
+  replSetName: shardReplSet
+
+sharding:
+    clusterRole: <span class="s2">&#34;shardsvr&#34;</span>
+
+<span class="c1">## Enterprise-Only Options:</span>
+
+<span class="c1">#auditLog:</span>
+</code></pre></div><ol start="17">
+<li>restart mongodb service</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo systemctl restart mongod.service
+</code></pre></div><ol start="18">
+<li>login database sharding</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">mongo mongoshard1:27017 -u mongo-admin -p --authenticationDatabase admin
+</code></pre></div><ol start="19">
+<li>Initiate replicaset for sharding</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">rs.initiate<span class="o">(</span> <span class="o">{</span> _id: <span class="s2">&#34;shardReplSet&#34;</span>, members: <span class="o">[</span> <span class="o">{</span> _id: 0, host: <span class="s2">&#34;mongoshard1:27017&#34;</span> <span class="o">}</span>,<span class="o">{</span> _id: 1, host: <span class="s2">&#34;mongoshard2:27017&#34;</span> <span class="o">}]})</span>   
+</code></pre></div><ol start="20">
+<li>login database mongos</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">mongo mongodb:27019 -u mongo-admin -p --authenticationDatabase admin
+</code></pre></div><ol start="21">
+<li>Add sharding</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sh.addShard<span class="o">(</span><span class="s2">&#34;shardReplSet/mongoshard1:27017,mongoshard2:27017&#34;</span><span class="o">)</span>
+</code></pre></div><ol start="22">
+<li>Cek status sharding</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sh.status<span class="o">()</span>
+</code></pre></div><p>Mungkin itu saja yang bisa saja jelaskan. Terimakasih</p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/devops/">DevOps</a></span>
+                <span class="separator"><a class="tag" href="/tags/sharding/">Sharding</a><a class="tag" href="/tags/ubuntu/">Ubuntu</a><a class="tag" href="/tags/mongodb/">MongoDB</a></span>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="/js/medium-zoom.min.2d6fd0be87fa98f0c9b4dc2536b312bbca48757f584f6ea1f394abc9bcc38fbc.js"
+        integrity="sha256-LW/Qvof6mPDJtNwlNrMSu8pIdX9YT26h85SrybzDj7w="
+        crossorigin="anonymous"></script></body>
+
+</html>

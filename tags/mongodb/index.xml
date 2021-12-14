@@ -16,5 +16,14 @@
       <description>Pada artikel ini saya akan menjelaskan bagaimana cara untuk menginstall MongoDB menggunakan Vagrant</description>
     </item>
     
+    <item>
+      <title>Setup MongoDB Sharding</title>
+      <link>https://zuhairyahya.site/post/setup-mongodb-sharding/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/setup-mongodb-sharding/</guid>
+      <description>Pada artikel ini saya akan menjelaskan mengenai cara melakukan sharding pada MongoDB</description>
+    </item>
+    
   </channel>
 </rss>
