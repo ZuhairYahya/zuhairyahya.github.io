@@ -6,7 +6,16 @@
     <description>Recent content on Documentation Zuhair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup MongoDB Sharding</title>
+      <link>https://zuhairyahya.site/post/setup-mongodb-sharding/</link>
+      <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/setup-mongodb-sharding/</guid>
+      <description>Pada artikel ini saya akan menjelaskan mengenai cara melakukan sharding pada MongoDB</description>
+    </item>
+    
     <item>
       <title>Install MongoDB Using Vagrant</title>
       <link>https://zuhairyahya.site/post/install-mongodb-using-vagrant/</link>
@@ -14,15 +23,6 @@
       
       <guid>https://zuhairyahya.site/post/install-mongodb-using-vagrant/</guid>
       <description>Pada artikel ini saya akan menjelaskan bagaimana cara untuk menginstall MongoDB menggunakan Vagrant</description>
-    </item>
-    
-    <item>
-      <title>Setup MongoDB Sharding</title>
-      <link>https://zuhairyahya.site/post/setup-mongodb-sharding/</link>
-      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://zuhairyahya.site/post/setup-mongodb-sharding/</guid>
-      <description>Pada artikel ini saya akan menjelaskan mengenai cara melakukan sharding pada MongoDB</description>
     </item>
     
     <item>
