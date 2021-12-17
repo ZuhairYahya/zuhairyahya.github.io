@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Documentation Zuhair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zuhairyahya.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Docker Using Vagrant</title>
+      <link>https://zuhairyahya.site/post/install-docker-using-vagrant/</link>
+      <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://zuhairyahya.site/post/install-docker-using-vagrant/</guid>
+      <description>Pada artikel ini saya akan menjelaskan mengenai cara install docker dengan menggunakan vagrant</description>
+    </item>
+    
     <item>
       <title>Setup MongoDB Sharding</title>
       <link>https://zuhairyahya.site/post/setup-mongodb-sharding/</link>
