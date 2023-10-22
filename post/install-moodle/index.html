@@ -3,7 +3,7 @@
     <title> Zuhair Yahya | Install Moodle </title>
 
     
-    <meta charset="utf-8"><meta name="generator" content="Hugo 0.89.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.119.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="Cara Install Moodle">
     
     
@@ -39,8 +39,8 @@
     
     
     <script type="text/javascript"
-            src="/js/anatole-header.min.0c05c0a90d28c968a1cad4fb31abd0b8e1264e788ccefed022ae1d3b6f627514.js"
-            integrity="sha256-DAXAqQ0oyWihytT7MavQuOEmTniMzv7QIq4dO29idRQ="
+            src="/js/anatole-header.min.df804b63b5bd8474ea0756ea874bc8f1e92552708cc6ea43aa0d76981dc419f9.js"
+            integrity="sha256-34BLY7W9hHTqB1bqh0vI8eklUnCMxupDqg12mB3EGfk="
             crossorigin="anonymous"></script>
 
 
@@ -48,8 +48,8 @@
         
         
         <script type="text/javascript"
-                src="/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js"
-                integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus="
+                src="/js/anatole-theme-switcher.min.ea8ebe268922ef9849261a1312cd65b640595e65251ce4c00534a176afd1ac0c.js"
+                integrity="sha256-6o6&#43;Joki75hJJhoTEs1ltkBZXmUlHOTABTShdq/RrAw="
                 crossorigin="anonymous"></script>
     
     <meta name="twitter:card" content="summary_large_image"/>
@@ -94,7 +94,7 @@
         
     </ul>
     <div class="footer">
-        <div class="by_farbox">&copy; Zuhair Yahya  2021 </div>
+        <div class="by_farbox">&copy; Zuhair Yahya  2023 </div>
     </div>
 </div>
 <div class="main">
@@ -159,124 +159,124 @@
 <ol>
 <li>Update packages</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get update
-</code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt-get update
+</span></span></code></pre></div><ol start="2">
 <li>Install apache</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo apt install apache2
-</code></pre></div><ol start="3">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt install apache2
+</span></span></code></pre></div><ol start="3">
 <li>Start apache</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo systemctl start apache2
-</code></pre></div><ol start="4">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo systemctl start apache2
+</span></span></code></pre></div><ol start="4">
 <li>Cek status apache</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo systemctl status apache2
-</code></pre></div><ol start="5">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo systemctl status apache2
+</span></span></code></pre></div><ol start="5">
 <li>Install mysql client</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo apt install mysql-client mysql-server php libapache2-mod-php
-</code></pre></div><ol start="6">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt install mysql-client mysql-server php libapache2-mod-php
+</span></span></code></pre></div><ol start="6">
 <li>Start mysql</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo systemctl start mysql
-</code></pre></div><ol start="7">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo systemctl start mysql
+</span></span></code></pre></div><ol start="7">
 <li>Enable mysql</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo systemctl <span class="nb">enable</span> mysql
-</code></pre></div><ol start="8">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> mysql
+</span></span></code></pre></div><ol start="8">
 <li>Security mysql</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo mysql_secure_installation
-
-- Untuk masukkan password, tekan enter saja
-- masukkan password baru
-- Sisanya pilih Y semua
-</code></pre></div><ol start="9">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo mysql_secure_installation
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">- Untuk masukkan password, tekan enter saja
+</span></span><span class="line"><span class="cl">- masukkan password baru
+</span></span><span class="line"><span class="cl">- Sisanya pilih Y semua
+</span></span></code></pre></div><ol start="9">
 <li>Edit file mysqld.cnf</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
-
-Pada bagian bawah <span class="o">[</span>mysql<span class="o">]</span>
-<span class="nv">default_storage_engine</span> <span class="o">=</span> innodb
-<span class="nv">innodb_file_per_table</span> <span class="o">=</span> <span class="m">1</span>
-<span class="nv">innodb_file_format</span> <span class="o">=</span> Barracuda
-<span class="nv">innodb_large_prefix</span> <span class="o">=</span> <span class="m">1</span>
-</code></pre></div><ol start="10">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Pada bagian bawah <span class="o">[</span>mysql<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">default_storage_engine</span> <span class="o">=</span> innodb
+</span></span><span class="line"><span class="cl"><span class="nv">innodb_file_per_table</span> <span class="o">=</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="nv">innodb_file_format</span> <span class="o">=</span> Barracuda
+</span></span><span class="line"><span class="cl"><span class="nv">innodb_large_prefix</span> <span class="o">=</span> <span class="m">1</span>
+</span></span></code></pre></div><ol start="10">
 <li>Restart mysql</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo systemctl restart mysql
-</code></pre></div><ol start="11">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo systemctl restart mysql
+</span></span></code></pre></div><ol start="11">
 <li>Install php 7.2</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo apt install graphviz aspell ghostscript clamav php7.2-pspell php7.2-curl php7.2-gd php7.2-intl php7.2-mysql php7.2-xml php7.2-xmlrpc php7.2-ldap php7.2-zip php7.2-soap php7.2-mbstring
-</code></pre></div><ol start="12">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt install graphviz aspell ghostscript clamav php7.2-pspell php7.2-curl php7.2-gd php7.2-intl php7.2-mysql php7.2-xml php7.2-xmlrpc php7.2-ldap php7.2-zip php7.2-soap php7.2-mbstring
+</span></span></code></pre></div><ol start="12">
 <li>Buat database</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo mysql -u root -p
-
-CREATE DATABASE moodle<span class="p">;</span>
-CREATE USER <span class="s1">&#39;moodle&#39;</span>@<span class="s1">&#39;localhost&#39;</span>  IDENTIFIED BY  <span class="s1">&#39;masukkan-password&#39;</span><span class="p">;</span>
-ALTER DATABASE moodle DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci<span class="p">;</span>
-GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,CREATE TEMPORARY TABLES,DROP,INDEX,ALTER ON moodle.* TO moodle@localhost IDENTIFIED BY <span class="s1">&#39;masukkan-password&#39;</span><span class="p">;</span>
-FLUSH PRIVILEGES<span class="p">;</span>
-EXIT<span class="p">;</span>
-</code></pre></div><ol start="13">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo mysql -u root -p
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">CREATE DATABASE moodle<span class="p">;</span>
+</span></span><span class="line"><span class="cl">CREATE USER <span class="s1">&#39;moodle&#39;</span>@<span class="s1">&#39;localhost&#39;</span>  IDENTIFIED BY  <span class="s1">&#39;masukkan-password&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">ALTER DATABASE moodle DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci<span class="p">;</span>
+</span></span><span class="line"><span class="cl">GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,CREATE TEMPORARY TABLES,DROP,INDEX,ALTER ON moodle.* TO moodle@localhost IDENTIFIED BY <span class="s1">&#39;masukkan-password&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">FLUSH PRIVILEGES<span class="p">;</span>
+</span></span><span class="line"><span class="cl">EXIT<span class="p">;</span>
+</span></span></code></pre></div><ol start="13">
 <li>Download moodle versi 3.4</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">wget https://download.moodle.org/download.php/direct/stable34/moodle-latest-34.tgz
-</code></pre></div><ol start="14">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wget https://download.moodle.org/download.php/direct/stable34/moodle-latest-34.tgz
+</span></span></code></pre></div><ol start="14">
 <li>Ekstrak file moodle</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">tar -zxvf moodle-latest-34.tgz
-</code></pre></div><ol start="15">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">tar -zxvf moodle-latest-34.tgz
+</span></span></code></pre></div><ol start="15">
 <li>Pindahkan file moodle</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo mv moodle /var/www/html/moodle
-</code></pre></div><ol start="16">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo mv moodle /var/www/html/moodle
+</span></span></code></pre></div><ol start="16">
 <li>Buat directory moodle</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo mkdir /var/www/moodledata
-</code></pre></div><ol start="17">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo mkdir /var/www/moodledata
+</span></span></code></pre></div><ol start="17">
 <li>Berikan hak akses</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo chown -R www-data:www-data /var/www/html/moodle/
-sudo chmod -R <span class="m">755</span> /var/www/html/moodle/
-sudo chown www-data /var/www/moodledata
-sudo chmod -R <span class="m">777</span> /var/www/moodledata
-</code></pre></div><ol start="18">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo chown -R www-data:www-data /var/www/html/moodle/
+</span></span><span class="line"><span class="cl">sudo chmod -R <span class="m">755</span> /var/www/html/moodle/
+</span></span><span class="line"><span class="cl">sudo chown www-data /var/www/moodledata
+</span></span><span class="line"><span class="cl">sudo chmod -R <span class="m">777</span> /var/www/moodledata
+</span></span></code></pre></div><ol start="18">
 <li>Buat file moodle.conf</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">&lt;VirtualHost *:80&gt;
-ServerAdmin admin@example.com
-DocumentRoot /var/www/html/moodle/
-ServerName example.com
-ServerAlias www.example.com
-
-&lt;Directory /var/www/html/moodle/&gt;
-Options +FollowSymlinks
-AllowOverride All
-Require all granted
-&lt;/Directory&gt;
-
-ErrorLog <span class="si">${</span><span class="nv">APACHE_LOG_DIR</span><span class="si">}</span>/error.log
-CustomLog <span class="si">${</span><span class="nv">APACHE_LOG_DIR</span><span class="si">}</span>/access.log combined
-
-&lt;/VirtualHost&gt;
-</code></pre></div><ol start="19">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">&lt;VirtualHost *:80&gt;
+</span></span><span class="line"><span class="cl">ServerAdmin admin@example.com
+</span></span><span class="line"><span class="cl">DocumentRoot /var/www/html/moodle/
+</span></span><span class="line"><span class="cl">ServerName example.com
+</span></span><span class="line"><span class="cl">ServerAlias www.example.com
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;Directory /var/www/html/moodle/&gt;
+</span></span><span class="line"><span class="cl">Options +FollowSymlinks
+</span></span><span class="line"><span class="cl">AllowOverride All
+</span></span><span class="line"><span class="cl">Require all granted
+</span></span><span class="line"><span class="cl">&lt;/Directory&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">ErrorLog <span class="si">${</span><span class="nv">APACHE_LOG_DIR</span><span class="si">}</span>/error.log
+</span></span><span class="line"><span class="cl">CustomLog <span class="si">${</span><span class="nv">APACHE_LOG_DIR</span><span class="si">}</span>/access.log combined
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/VirtualHost&gt;
+</span></span></code></pre></div><ol start="19">
 <li>Mengaktifkan virtualhost</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo a2enmod rewrite
-sudo a2ensite moodle.conf
-</code></pre></div><ol start="20">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo a2enmod rewrite
+</span></span><span class="line"><span class="cl">sudo a2ensite moodle.conf
+</span></span></code></pre></div><ol start="20">
 <li>Restart apache</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo systemctl restart apache2
-</code></pre></div><ol start="21">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo systemctl restart apache2
+</span></span></code></pre></div><ol start="21">
 <li>Buka browser dan ketikkan ip anda</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">http://ip-address/moodle
-</code></pre></div><p>Mungkin itu saja yang bisa saja jelaskan, semoga bermanfaat untuk anda</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">http://ip-address/moodle
+</span></span></code></pre></div><p>Mungkin itu saja yang bisa saja jelaskan, semoga bermanfaat untuk anda</p>
 </div>
         <div class="post-footer">
             <div class="info">
@@ -294,8 +294,8 @@ sudo a2ensite moodle.conf
 </div>
 
 <script type="text/javascript"
-        src="/js/medium-zoom.min.2d6fd0be87fa98f0c9b4dc2536b312bbca48757f584f6ea1f394abc9bcc38fbc.js"
-        integrity="sha256-LW/Qvof6mPDJtNwlNrMSu8pIdX9YT26h85SrybzDj7w="
+        src="/js/medium-zoom.min.e1c6918cbaa90022a5612f0bd71c7bf3be6d036614c5729cebfe14f7b91fa4bc.js"
+        integrity="sha256-4caRjLqpACKlYS8L1xx7875tA2YUxXKc6/4U97kfpLw="
         crossorigin="anonymous"></script></body>
 
 </html>
